@@ -1,0 +1,21 @@
+en:
+  site_settings:
+    discord_events_enabled: "Enable the Discord Events plugin."
+    discord_events_sync_enabled: "Enable periodic background synchronization of scheduled events from Discord."
+    discord_events_bot_token: "Bot token used to authenticate against the Discord API. Requires a bot invited to the guild with the 'View Channels' permission."
+    discord_events_guild_id: "The ID of the Discord guild (server) whose scheduled events will be displayed."
+    discord_events_sync_interval_minutes: "How often (in minutes) scheduled events are synchronized from Discord."
+    discord_events_max_cached_events: "Maximum number of Discord events kept in the local cache. Oldest past events are pruned first."
+    discord_events_default_sort: "Default sort order for the event list."
+    discord_events_top_menu: "Show an 'Events' item in the top navigation menu."
+  discord_events:
+    errors:
+      configuration: "The plugin is not fully configured. Please set both the Discord bot token and the guild ID."
+      authentication: "Discord rejected the bot token. Please verify the token is correct and has not been reset."
+      permission: "The bot is not allowed to access this guild. Make sure the bot has been invited to the guild and can view its channels."
+      not_found: "Discord could not find this guild. Please verify the guild ID."
+      rate_limited: "Discord is currently rate limiting requests from this site. Please try again in a moment."
+      server: "Discord returned a server error. Please try again later."
+      network: "Discord could not be reached. Please check the network connection of this server."
+      malformed: "Discord returned an unexpected response. The API may have changed or be experiencing issues."
+      http: "An unexpected error occurred while talking to Discord."

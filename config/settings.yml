@@ -1,0 +1,31 @@
+discourse_discord_events:
+  discord_events_enabled:
+    default: false
+    client: true
+  discord_events_sync_enabled:
+    default: false
+  discord_events_bot_token:
+    default: ""
+    secret: true
+  discord_events_guild_id:
+    default: ""
+  discord_events_sync_interval_minutes:
+    default: 10
+    min: 5
+    max: 1440
+  discord_events_max_cached_events:
+    default: 1000
+    min: 10
+    max: 10000
+  discord_events_default_sort:
+    default: "start_time_asc"
+    type: enum
+    choices:
+      - "start_time_asc"
+      - "start_time_desc"
+      - "name_asc"
+      - "recently_synced"
+    client: true
+  discord_events_top_menu:
+    default: false
+    client: true

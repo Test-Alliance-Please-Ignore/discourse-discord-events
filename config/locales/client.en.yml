@@ -1,0 +1,87 @@
+en:
+  admin_js:
+    admin:
+      site_settings:
+        categories:
+          discourse_discord_events: "Discord Events"
+      discord_events:
+        dashboard:
+          title: "Dashboard"
+          nav_description: "Synchronization status, history, and controls."
+          description: "Discord Scheduled Events are mirrored into a local cache and displayed read-only. Discord remains the single source of truth."
+          plugin_enabled: "Plugin enabled"
+          sync_enabled: "Background synchronization enabled"
+          configured: "Bot token and guild ID configured"
+          test_connection: "Test connection"
+          sync_now: "Sync now"
+          clear_cache: "Clear cache"
+          connection_ok:
+            one: "Connection successful — Discord returned %{count} scheduled event."
+            other: "Connection successful — Discord returned %{count} scheduled events."
+          connection_failed: "Connection failed."
+          sync_enqueued: "Synchronization has been enqueued and will run in the background."
+          clear_cache_confirm: "This removes all cached Discord events from this site. They will reappear after the next successful synchronization. Continue?"
+          status_heading: "Status"
+          cached_events: "Cached events"
+          upcoming_count:
+            one: "%{count} upcoming"
+            other: "%{count} upcoming"
+          past_count:
+            one: "%{count} past"
+            other: "%{count} past"
+          last_sync: "Last synchronization"
+          duration_ms:
+            one: "%{count} ms"
+            other: "%{count} ms"
+          never: "never"
+          next_sync: "Next synchronization"
+          not_scheduled: "not scheduled"
+          api_status: "Discord API"
+          rate_limited: "Rate limited — waiting before the next request"
+          api_error: "Last request failed"
+          api_ok: "OK"
+          last_error: "Last error:"
+          history_heading: "Synchronization history"
+          history_when: "When"
+          history_result: "Result"
+          history_details: "Details"
+          history_success: "Success"
+          history_failure: "Failed"
+          history_summary: "%{created} created, %{updated} updated, %{deleted} deleted, %{completed} marked completed"
+          history_empty: "No synchronization has run yet."
+  js:
+    discord_events:
+      admin:
+        title: "Discord Events"
+      title: "Events"
+      upcoming: "Upcoming"
+      past: "Past"
+      filter_label: "Event filter"
+      search_placeholder: "Search events…"
+      no_events: "No events found."
+      until: "until"
+      pagination_label: "Event pages"
+      previous_page: "Previous"
+      next_page: "Next"
+      page_info: "Page %{page} of %{total}"
+      participants:
+        one: "%{count} interested"
+        other: "%{count} interested"
+      sort:
+        label: "Sort by"
+        start_time_asc: "Start time (earliest first)"
+        start_time_desc: "Start time (latest first)"
+        name_asc: "Name"
+        recently_synced: "Recently updated"
+      status:
+        scheduled: "Scheduled"
+        active: "Happening now"
+        completed: "Completed"
+        canceled: "Canceled"
+      back_to_list: "All events"
+      when: "When"
+      where: "Where"
+      hosted_by: "Hosted by"
+      interest: "Interest"
+      open_in_discord: "Open in Discord"
+      last_synced: "Last synced"
